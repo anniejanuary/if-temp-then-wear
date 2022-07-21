@@ -6,19 +6,24 @@ namespace IntroToDecisionMaking
     {
         static void Main(string[] args)
         {
-            int temperature = 15;
+            Console.WriteLine("Please write the temperature and press enter");
+            string input = Console.ReadLine();
 
-            if (temperature < 15)
+            int inputTemperature = int.Parse(input);
+
+     
+
+            if (inputTemperature < 15)
             {
                 Console.WriteLine("Wear a jacket");
             }
 
-            if (temperature == 15)
+            else if (inputTemperature == 15)
             {
                 Console.WriteLine("It's warm, don't wear a jacket");
             }
 
-            if(temperature > 15)
+            else 
             {
                 Console.WriteLine("Nice and cozy, wear a tshirt");
             }
